@@ -1,0 +1,173 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #080710;
+}
+
+
+h1 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+}
+
+
+
+#login-form {
+  height: 520px;
+  width: 480px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  border-radius: 30px;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(252, 0, 0, 0.1);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+  padding: 40px 25px;
+}
+
+
+
+#login-form input[type="text"],
+#login-form input[type="password"] {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 0, 0, 0.07);
+  border-radius: 30px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+#login-form button {
+  margin-top: 50px;
+  width: 100%;
+  background-color: #ff0000;
+  color: #080710;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 30px;
+  cursor: pointer;
+
+}
+
+table {
+  width: 600px;
+  border-collapse: none;
+  border-radius: 30px;
+  margin-top: 20px;
+  float: right;
+}
+
+table th {
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+table tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.07);
+}
+
+table tr:hover {
+  background-color: rgba(172, 172, 172, 0.2);
+}
+
+* {
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: 150px;
+}
+
+.contenedor_cartas {
+  display: inline-flex;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.13);
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+
+}
+
+.datostabla {
+  height: 260px;
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translate(0, -50%);
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+  padding: 50px 35px;
+  float: right;
+}
+
+.datos {
+  height: 260px;
+  width: 650px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: fixed;
+  transform: translate(60, -60%);
+  right: 0;
+  left: 10px;
+  top: 30%; /* Add this line to adjust the top position */
+  border-radius: 30px;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+  padding: 50px 35px;
+}
+
+.datos h1 {
+
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  letter-spacing: 0.5px;
+  outline: none;
+  border: none;
+}
+#dataForm input[type="text"],
+#dataForm input[type="text2"] {
+  display: flexbox;
+  height: 25px;
+  width: 100%;
+  background-color: rgba(50, 31, 71, 0.158);
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(255, 0, 0, 0.6);
+
+}
+
+.datos button {
+  margin-top: 25px;
+  width: 100%;
+  background-color: #ff0000;
+  color: #080710;
+  padding: 7.5px 0;
+  font-size: 9px;
+  font-weight: 300;
+  border-radius: 15px;
+  cursor: pointer;
+
+}
+
+
+button {
+  background-color: #ffffff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  border-radius: 15%;
+  padding: 8px;
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Cartas</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+</head>
+
+<body>
+
+
+    <!-- Login Interface -->
+   
+    
+    
+        <div id="login-container" class="container">
+
+            <form id="login-form">
+                <h1>Iniciar Sesión</h1>
+                <label for="username" style="text-align: center;">Usuario:</label>
+                <input type="text" id="username" name="username">
+                <br>
+                <label for="password" style="text-align: center;">Contraseña:</label>
+                <input type="password" id="password" name="password">
+                <br>
+                <button type="submit">Iniciar sesión</button>
+            </form>
+            <p id="error-message"></p>
+        </div>
+    
+    
+
+    <!-- Game Interface -->
+
+    <div id="game-container" class="contenedor" style="display: none;" ">
+        <div class="contenedor_cartas">
+            <button numero="1" carta="As de corazones"><img src="img/1.png" alt="" /></button>
+            <button numero="2" carta="2 de Diamantes"><img src="img/2.png" alt="" /></button>
+            <button numero="3" carta=" de Corazones"><img src="img/3.png" alt="" /></button>
+            <button numero="4" carta=" de Corazones"><img src="img/4.png" alt="" /></button>
+            <button numero="5" carta=" de Corazones"><img src="img/5.png" alt="" /></button>
+            <button numero="6" carta=" de Treboles"><img src="img/6.png" alt="" /></button>
+            <button numero="7" carta=" de Diamantes"><img src="img/7.png" alt="" /></button>
+            <button numero="8" carta=" de Treboles"><img src="img/8.png" alt="" /></button>
+            <button numero="9" carta=" de Diamantes"><img src="img/9.png" alt="" /></button>
+            <button numero="10" carta=" de Corazones"><img src="img/10.png" alt="" /></button>
+            <button numero="11" carta="J de treboles"><img src="img/11.png" alt="" /></button>
+            <button numero="12" carta="Q de Espadas"><img src="img/12.png" alt="" /></button>
+            <button numero="13" carta="K de Diamantes"><img src="img/13.png" alt="" /></button>
+        </div>
+        <div class="datostabla">
+            <table id="dataTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Carta</th>
+                        <th>Cantidad</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody-cartas">
+                    <!-- Aquí se insertarán las filas de la tabla -->
+                </tbody>
+            </table>
+            <div>
+                <div class="registro">
+
+                </div>
+            </div>
+           
+        </div>
+
+        <div class="datos">
+            <form id="dataForm">
+                <h1>Registro cartas</h1>
+                <input type="text" id="numero_carta" placeholder="Número de Carta" required  />
+                <input type="text2" id="carta" placeholder="Carta" required />
+                <button class="submit" type="submit">Guardar</button>
+            </form>
+        </div>
+        <script src="js/script.js"></script>
+</body>
+
+</html>
